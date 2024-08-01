@@ -13,6 +13,7 @@ jobs:
         run: echo "goodbye!"
 
   second-job:
+    needs: premier-job
     name: mon second job
     runs-on: ubuntu-latest
     steps:
